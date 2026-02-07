@@ -199,7 +199,7 @@
             document.getElementById('water-bar').style.height = percent + "%";
 
             window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
-            new Audio('https://www.soundjay.com/buttons/beep-07a.mp3').play();
+           if (navigator.vibrate) { navigator.vibrate(200); }
         }
     </script>
 </body>
